@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/Images/title icon.png" type="image/x-icon">
+
+    <title>Event Details</title>
+     <!-- Stylesheets link -->
+     <link rel="stylesheet" href="css/Main/style.css">
+</head>
+<body>
+<!-- navigation -->
+<header class="navigation bg-tertiary">
+	<nav class="navbar navbar-expand-xl navbar-light text-center py-3 fixed-top">
+		<div class="container bg-primary rounded-pill">
+
+            <a class="navbar-brand text-center ml-1" href="index.html">
+                <h1 style="margin-top: 0.3vw;" class="text-white">Game Zone</h1>
+              </a>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					<li class="nav-item"> <a class="nav-link text-white" href="index.html">Home</a>
+					</li>
+
+                    <li class="nav-item "> <a class="nav-link text-white" href="index.html#services">Services</a>
+					</li>
+
+					<li class="nav-item "> <a class="nav-link text-white" href="games-stations.html">Game Station</a>
+					</li>
+
+                        <li class="nav-item ">
+                          <li class="nav-item "> <a class="nav-link text-white" href="Games.html">Games</a>
+					</li>
+
+          <li class="nav-item "> <a class="nav-link text-white" href="events.html">Events</a>
+					<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item " href="team.html">Our Team</a>
+							</li>
+							<li><a class="dropdown-item " href="vision.html">Our Vision</a>
+							</li>
+							<li><a class="dropdown-item " href="terms.html">Terms &amp; Condition</a>
+							</li>
+							<li><a class="dropdown-item " href="Privacy.html">Privacy &amp; Policy</a>
+							</li>
+              
+						</ul>
+					</li>
+				</ul>
+        
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+			  </button>
+              <a href="register.html" class="btn btn-primary ms-2 ms-lg-2 rounded-pill">Sign Up</a>
+              <a href="Login.html" class="btn btn-outline-primary rounded-pill">Login</a>
+			</div>
+		</div>
+	</nav>
+</header>
+
+
+<!-- /navigation -->  
+
+<!-- Join Us pop-up -->
+<div class="modal fade" id="join-us" tabindex="-1"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h4 class="modal-title" id="exampleModalLabel">Join Us</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form method="get">
+            <div class="row">
+                <div class="col-lg-6 mb-4 pb-2">
+                    <div class="form-group">
+                      <label for="join_full_name" class="form-label">Full Name</label>
+                      <input type="text" class="form-control shadow-none" id="join_full_name" name="Name" placeholder="Ex: Ammar Bawazeer">
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4 pb-2">
+                    <div class="form-group">
+                        <label for="join_age" class="form-label">Age</label>
+                        <input type="number" class="form-control shadow-none" id="join_age" min="18" max="50" name="Age" placeholder="18-50" >
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4 pb-2">
+                    <div class="form-group">
+                        <label for="join_phone_number" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control shadow-none" id="join_phone_number" name="Phone" placeholder="Ex: 739449259" >
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4 pb-2">
+                    <div class="form-group">
+                        <label for="join_location" class="form-label">Address</label>
+                        <input type="text" class="form-control shadow-none" id="join_location" name="Address" placeholder="Ex: Aldis / Mukalla">
+                    </div>
+                </div>
+                <div class="col-lg-12 mb-4 pb-2">
+                    <div class="form-group">
+                        <label for="join_email_address" class="form-label">Email Address</label>
+                        <input type="email" class="form-control shadow-none" id="join_email_address" name="Email" placeholder="Ex: epic@gmail.com">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <button type="submit" class="btn btn-primary w-100" onclick="alert('Joined Successfully')">Reserve Your Seat Now</button>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- /Join Us pop-up -->
+
+
+<!-- Event Details -->
+<section class="section">
+	<div class="container">
+
+        <!-- Event Name -->
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="col-lg-10 mx-auto text-center title-row">
+                    <h2 class="section-title mb-0">Game Day X</h2>
+                <div class="section-border mt-4"></div>
+            </div> 
+        </div>
+        <!-- /Event Name -->
+
+
+        <!-- Who Are We section -->
+		<div class="row justify-content-between align-items-center">
+			<div class="col-lg-5">
+				<div class="section-title">
+					<p class="text-primary text-uppercase fw-bold mb-3">Who Are We</p>
+					<h1>Game Day X - A Celebration of Gaming.</h1>
+					<p>Game Day X is an exciting gaming event that is set to take place in the beautiful city of Hadramout Al-Mukalla, Yemen. This event aims to bring together gaming enthusiasts, professionals, and casual gamers from all across the region for a day filled with thrilling competitions, interactive exhibits, and a celebration of the gaming culture.</p>
+                    <p>Date: 24 April</p>
+                    <p>Time: 6:00 PM - 10:00 PM</p>
+                    <p>Location: AL-Dis / Al-Mukalla / Hadramout</p>
+				</div>
+			</div>
+			<div class="col-lg-6 mt-5 mt-lg-0">
+				<div class="has-video-popup position-relative">
+					<img src="Assets/images/game-event(1).jpg" alt="Game Day X" class="rounded-lg w-100">
+				</div>
+			</div>
+            <div style="margin-left: 25%;;" class="col-12 text-center mt-3">
+                <a style="width: 10vw;" class="btn btn-primary align-self-center" data-bs-toggle="modal" data-bs-target="#join-us">Join Us</a>
+            </div>
+		</div>
+        <!-- /Who Are We section -->
+
+	</div>
+</section>
+
+<!-- Event Experince section -->
+<section class="section loan-steps bg-tertiary">
+	<div class="container">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-lg-7">
+				<div class="section-title text-center">
+					<p class="text-primary text-uppercase fw-bold mb-3">Enjoy With Us</p>
+					<h1>Immerse Yourself in the Ultimate Gaming Experience at Game Day X!</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-lg-10">
+				<div class="row justify-content-center">
+					<div class="step-item col-lg-4 col-md-6">
+						<div class="text-center">
+							<p class="count">01</p>
+							<h3 class="mb-3">Level Up Your Game!</h3>
+							<p class="mb-0">Compete against the best players in Hadramout Al-Mukalla, showcase your skills, and win exciting prizes. Level up your gaming experience and be part of this thrilling event!</p>
+						</div>
+					</div>
+					<div class="step-item col-lg-4 col-md-6">
+						<div class="text-center">
+							<p class="count">02</p>
+							<h3 class="mb-3">Virtual Reality Adventure!</h3>
+							<p class="mb-0">Experience immersive VR and AR gaming, try out the latest technologies, and explore captivating virtual worlds. Don't miss this chance to elevate your gaming experience!</p>
+						</div>
+					</div>
+					<div class="step-item col-lg-4 col-md-6">
+						<div class="text-center">
+							<p class="count">03</p>
+							<h3 class="mb-3">Embrace Your Hero!</h3>
+							<p class="mb-0">Dress up as your favorite gaming characters, show off your creativity, and join the vibrant cosplay community. Be part of this incredible celebration of gaming culture at Game Day X!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /Event Experince section -->
+
+
+<!-- Main Events section -->
+<section class="section">
+	<div class="container">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-lg-6">
+				<div class="section-title text-center">
+					<p class="text-primary text-uppercase fw-bold mb-3">What To Expect</p>
+					<h1>Exciting Events at Game Day X!</h1>
+					<p>"Experience thrilling competitions, immersive VR adventures, and epic cosplay clashes!"</p>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="icon-box-item col-lg-4 col-md-6 text-center">
+				<div class="block">
+					<div class="icon w-25"> <img src="Assets/details/game.png" alt="Battle Royale"></div>
+					<h3 class="mb-3">Battle Royale Bonanza</h3>
+					<p class="mb-0 text-start">Engage in intense battles and fight for survival in the Battle Royale Bonanza at Game Day X. Be the last one standing in this adrenaline-fueled event!</p>
+				</div>
+			</div>
+			<div class="icon-box-item col-lg-4 col-md-6 text-center">
+				<div class="block">
+					<div class="icon w-25"><img src="Assets/details/virtual-reality (1).png" alt="VR World"></div>
+					<h3 class="mb-3">VR World Expedition</h3>
+					<p class="mb-0 text-start">Immerse yourself in breathtaking virtual reality landscapes and embark on thrilling adventures at the VR World Expedition during Game Day X.</p>
+				</div>
+			</div>
+			<div class="icon-box-item col-lg-4 col-md-6 text-center">
+				<div class="block">
+					<div class="icon w-25"><img src="Assets/details/frankenstein (1).png" alt="Cosplay Clash"></div>
+					<h3 class="mb-3">Cosplay Clash</h3>
+					<p class="mb-0 text-start">Unleash your creativity and join the vibrant world of cosplay at the Cosplay Clash event during Game Day X. Be part of the celebration!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /Main Events section -->
+
+
+<!-- Footer -->
+
+<footer id="footer" class="section-sm bg-tertiary">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <div class="footer-widget">
+                    <h5 class="mb-4 text-primary font-secondary">Service</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="games-stations.html">Games Station</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="events.html">Events</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="Games.html">Games</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <div class="footer-widget">
+                    <h5 class="mb-4 text-primary font-secondary">About</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="vision.html">Our Vision</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="team.html">Our Team</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <div class="footer-widget">
+                    <h5 class="mb-4 text-primary font-secondary">Help</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="index.html#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 newsletter-form">
+                <div style="background-color: #F4F4F4; padding: 35px;">
+                    <h5 class="mb-4 text-primary font-secondary">Subscribe</h5>
+                    <div class="pe-0 pe-xl-5">
+                        <form action="#!" method="get" name="mc-embedded-subscribe-form">
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control shadow-none bg-white border-end-0" placeholder="Email address"> <span class="input-group-text border-0 p-0">
+                                    <button onclick="alert('Subsceibed Successfully')" style="height: 2.85vw;" class="input-group-text border-0 bg-primary" type="submit" name="subscribe"
+                                            aria-label="Subscribe for Newsletter">
+                                        <i><img  src="Assets/Images/arrow-right.svg" alt=""></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <input type="text" name="b_463ee871f45d2d93748e77cad_a0a2c6d074" tabindex="-1">
+                            </div>
+                        </form>
+                    </div>
+                    <p class="mb-0">Stay in the loop with our latest news and notifications. Subscribe today for exclusive updates and be the first to know. Don't miss out, join our community now!</p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center mt-5 text-center text-md-start">
+            <div class="col-lg-4">
+                <a href="index.html">
+                    <h5>Game Zone</h5>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+                <ul class="list-unstyled list-inline mb-0 text-lg-center">
+                    <li class="list-inline-item me-4">
+                        <a class="text-black" href="Privacy.html">Privacy Policy</a>
+                    </li>
+                    <li class="list-inline-item me-4">
+                        <a class="text-black" href="terms.html">Terms &amp; Conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 text-md-end mt-4 mt-md-0">
+                <ul class="list-unstyled list-inline mb-0 social-icons">
+                    <li class="list-inline-item me-3">
+                        <a title="Explorer Facebook Profile" class="text-black" href="https://facebook.com/"><img src="Assets/Images/facebook.svg"></a>
+                    </li>
+                    <li class="list-inline-item me-3">
+                        <a title="Explorer Twitter Profile" class="text-black" href="https://twitter.com/"><img src="Assets/Images/twitter.svg"></a>
+                    </li>
+                    <li class="list-inline-item me-3">
+                        <a title="Explorer Instagram Profile" class="text-black" href="https://instagram.com/"><img src="Assets/Images/instagram.svg"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- /Footer -->
+
+<!-- # JS Plugins -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

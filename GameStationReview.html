@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Game Station Review</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<link rel="shortcut icon" href="Assets/Images/title icon.png" type="image/x-icon">
+    <!-- # Main Style Sheet -->
+    <link rel="stylesheet" href="css/Main/style.css">
+</head>
+
+<body>
+
+    <!-- reservation pop up -->
+    <div class="modal applyLoanModal fade" id="applyLoan" tabindex="-1" aria-labelledby="applyLoanLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <h4 class="modal-title" id="exampleModalLabel">Reservation Form</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#!" method="post">
+                        <div class="row">
+                            <div class="col-lg-6 mb-4 pb-2">
+                                <div class="form-group">
+                                    <label for="loan_full_name" class="form-label">Name</label>
+                                    <input type="text" class="form-control shadow-none" id="loan_full_name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-4 pb-2">
+                                <div class="form-group">
+                                    <label for="loan_email_address" class="form-label">Email address</label>
+                                    <input type="email" class="form-control shadow-none" id="loan_email_address"
+                                        placeholder="hsgfkjfs@gamil.com">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 mb-4 pb-2">
+                                <select class="form-control">
+                                    <option>Room type</option>
+                                    <option>VIP</option>
+                                    <option>Big</option>
+                                    <option>regular</option>
+                                    <option>Samll</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 mb-4 pb-2">
+                                <select class="form-control">
+                                    <option>Payment Methods</option>
+                                    <option>Cash</option>
+                                    <option>Omgy</option>
+                                    <option>Kuraimi</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-12 mb-4">
+                                <label>Upload </label>
+                                <div class="form-group">
+                                    <input type="file" class="form-control shadow-none" id="loan_repayment">
+                                </div>
+                                <span>skdhb skjdcbs</span>
+                            </div>
+
+
+                            <div class="col-lg-5 mb-4 pb-2">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Data</label>
+                                    <input type="date" class="form-control shadow-none" id="name"
+                                        placeholder="ex: Anas Nofel Barabaa">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4 pb-2">
+                                <div class="form-group">
+                                    <label for="Start" class="form-label">Start Hour</label>
+                                    <input type="text" class="form-control shadow-none" id="Start"
+                                        placeholder="Start Hour">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 mb-4 pb-2">
+                                <div class="form-group">
+                                    <label for="number" class="form-label">N-Hours</label>
+                                    <input type="number" class="form-control shadow-none" id="number">
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-12">
+                                <button type="submit" class="btn btn-primary w-100">Confirm Your Reservation</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- navigation -->
+<header class="navigation bg-tertiary">
+	<nav class="navbar navbar-expand-xl navbar-light text-center py-3 fixed-top">
+		<div class="container bg-primary rounded-pill">
+
+            <a class="navbar-brand text-center ml-1" href="index.html">
+                <h1 style="margin-top: 0.3vw;" class="text-white">Game Zone</h1>
+              </a>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					<li class="nav-item"> <a class="nav-link text-white" href="index.html">Home</a>
+					</li>
+
+                    <li class="nav-item "> <a class="nav-link text-white" href="index.html#services">Services</a>
+					</li>
+
+					<li class="nav-item "> <a class="nav-link text-white" href="games-stations.html">Game Station</a>
+					</li>
+
+                        <li class="nav-item ">
+                          <li class="nav-item "> <a class="nav-link text-white" href="Games.html">Games</a>
+					</li>
+
+          <li class="nav-item "> <a class="nav-link text-white" href="events.html">Events</a>
+					<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item " href="team.html">Our Team</a>
+							</li>
+							<li><a class="dropdown-item " href="vision.html">Our Vision</a>
+							</li>
+							<li><a class="dropdown-item " href="terms.html">Terms &amp; Condition</a>
+							</li>
+							<li><a class="dropdown-item " href="Privacy.html">Privacy &amp; Policy</a>
+							</li>
+              
+						</ul>
+					</li>
+				</ul>
+        
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+			  </button>
+              <a href="register.html" class="btn btn-primary ms-2 ms-lg-2 rounded-pill">Sign Up</a>
+              <a href="Login.html" class="btn btn-outline-primary rounded-pill">Login</a>
+			</div>
+		</div>
+	</nav>
+</header>
+
+
+<!-- /navigation -->  
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="col-lg-10 mx-auto text-center title-row">
+                    <h2 class="section-title mb-0">Station Review</h2>
+                    <div class="section-border mt-4"></div>
+                  </div>
+                </div>
+              </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-7">
+                    <div class="section-title">
+                        <p class="text-primary text-uppercase fw-bold mb-3">Overview</p>
+                        <h2 class="h1 mb-4">Lucille Game Station</h2>
+                        <div class="content ">
+                            <p class="lead">Lucille Game Station is an immersive gaming experience that offers a unique
+                                blend of cutting-edge technology and captivating gameplay.</p>
+                            <p class="lead">Designed for gamers of all ages and skill levels, Lucille provides a wide
+                                range of entertainment options to satisfy even the most discerning gaming enthusiasts.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                    <img   src="Assets/Images/station1.jpg" class="rounded w-100">
+                    <a style="width:11vw; margin-left: 5vw;"  class="btn btn-primary mt-4  " href="station detalis.html">Station Detail</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-6"><h2 class="section-title text-center text-uppercase mb-5">reviews</h2></div>
+            </div>
+            <div class="row justify-content-between align-items-center mt-5 mb-5">
+                <div class="col-3 ">
+                    <span><img width="40vw" height="40vw" class="img-circle" src="Assets/Images/Account pic.png" alt=""></span>
+                    <span class="m-3"><h6 class="d-inline-block">Ahmed Fakhory</h6></span>
+                    <div class="mt-2">
+                        <img  width="100vw" src="Assets/Ratings/star5.png">
+                        <h6 class=" d-inline-block m-2">A Gamer's Paradise</h6>
+                    </div>
+                    <div class="mt-2">
+                        <p>Lucille is a game station unlike any other. The graphics are stunning, the gameplay is smooth,
+                             and the features are endless. I've spent countless hours lost in virtual worlds, and I can't imagine going back to anything else.</p>
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <span><img width="40vw" height="40vw" class="img-circle" src="Assets/Images/Account pic.png" alt=""></span>
+                    <span class="m-3"><h6 class="d-inline-block">Mohammed Salem</h6></span>
+                    <div class="mt-2">
+                        <img  width="100vw" src="Assets/Ratings/star5.png">
+                        <h6 class=" d-inline-block m-2">Innovation at its Finest</h6>
+                    </div>
+                    <div class="mt-2">
+                        <p>Lucille's innovative design and cutting-edge technology set it apart from the competition. The haptic feedback is incredible,
+                             and the voice control features are truly revolutionary. This is the future of gaming, and I'm excited to be a part of it.</p>
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <span><img width="40vw" height="40vw" class="img-circle" src="Assets/Images/Account pic.png" alt=""></span>
+                    <span class="m-3"><h6 class="d-inline-block">Omer Ali</h6></span>
+                    <div class="mt-2">
+                        <img  width="100vw" src="Assets/Ratings/star4,5.png">
+                        <h6 class=" d-inline-block m-2">A Community of Gamers</h6>
+                    </div>
+                    <div class="mt-2">
+                        <p>What I love most about Lucille is the vibrant community of gamers. I've met so many amazing people online, and we've shared countless
+                             hours of laughter and competition. It's more than just a game station. its a live style</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="row justify-content-between align-items-center mt-5 mb-5">
+                <div class="col-3 ">
+                    <span><img width="40vw" height="40vw" class="img-circle" src="Assets/Images/Account pic.png" alt=""></span>
+                    <span class="m-3"><h6 class="d-inline-block">Anas Saleh</h6></span>
+                    <div class="mt-2">
+                        <img  width="100vw" src="Assets/Ratings/star4,5.png">
+                        <h6 class=" d-inline-block m-2">Endless Entertainment</h6>
+                    </div>
+                    <div class="mt-2">
+                        <p>With a vast library of games and endless customization options, Lucille offers something for everyone. I've never been bored since I got it,
+                             and I'm always discovering new things to do.</p>
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <span><img width="40vw" height="40vw" class="img-circle" src="Assets/Images/Account pic.png" alt=""></span>
+                    <span class="m-3"><h6 class="d-inline-block">Ammar Zain</h6></span>
+                    <div class="mt-2">
+                        <img  width="100vw" src="Assets/Ratings/star2,5.png">
+                        <h6 class=" d-inline-block m-2">Disappointing Experience</h6>
+                    </div>
+                    <div class="mt-2">
+                        <p>Lucille fell short of my expectations. The graphics are underwhelming, the gameplay is repetitive, and the features are limited. I'm not impressed.
+                            so I would say it's pretty average
+                        </p>
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <span><img width="40vw" height="40vw" class="img-circle" src="Assets/Images/Account pic.png" alt=""></span>
+                    <span class="m-3"><h6 class="d-inline-block">Ahmed Omer</h6></span>
+                    <div class="mt-2">
+                        <img  width="100vw" src="Assets/Ratings/star3.5.png">
+                        <h6 class=" d-inline-block m-2">A Work in Progress</h6>
+                    </div>
+                    <div class="mt-2">
+                        <p>Lucille is a work in progress. It has some amazing features, but it also has some flaws. I'm excited to see how it evolves in the future, but I'm not sure if it's worth the price tag right now.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between align-items-center mt-5 mb-5">
+                <div class="col-3 ">
+                    <span><img width="40vw" height="40vw" class="img-circle" src="Assets/Images/Account pic.png" alt=""></span>
+                    <span class="m-3"><h6 class="d-inline-block">Gamal Ali</h6></span>
+                    <div class="mt-2">
+                        <img  width="100vw" src="Assets/Ratings/star3.5.png">
+                        <h6 class=" d-inline-block m-2">neaad improvments</h6>
+                    </div>
+                    <div class="mt-2">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla vero, nobis dicta perspiciatis repellendus sapiente unde, beatae at accusantium ratione molestias necessitatibus ut quod quaerat amet error, atque rem autem.</p>
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <span><img width="40vw" height="40vw" class="img-circle" src="Assets/Images/Account pic.png" alt=""></span>
+                    <span class="m-3"><h6 class="d-inline-block">Mohammed Saeed</h6></span>
+                    <div class="mt-2">
+                        <img  width="100vw" src="Assets/Ratings/star1.png">
+                        <h6 class=" d-inline-block m-2">Overhyped and Overpriced</h6>
+                    </div>
+                    <div class="mt-2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fugiat unde voluptatem in aliquid, commodi asperiores quae repudiandae. Modi accusantium dolorum reiciendis officiis ratione assumenda possimus id a mollitia aspernatur.</p>
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <span><img width="40vw" height="40vw" class="img-circle" src="Assets/Images/Account pic.png" alt=""></span>
+                    <span class="m-3"><h6 class="d-inline-block">Osama Omer</h6></span>
+                    <div class="mt-2">
+                        <img  width="100vw" src="Assets/Ratings/star3.5.png">
+                        <h6 class=" d-inline-block m-2">Above Average</h6>
+                    </div>
+                    <div class="mt-2">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla vero, nobis dicta perspiciatis repellendus sapiente unde, beatae at accusantium ratione molestias necessitatibus ut quod quaerat amet error, atque rem autem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between align-items-center mt-5 mb-5">
+                <div class="col-3 ">
+                    <span><img width="40vw" height="40vw" class="img-circle" src="Assets/Images/Account pic.png" alt=""></span>
+                    <span class="m-3"><h6 class="d-inline-block">Rasheed Ali</h6></span>
+                    <div class="mt-2">
+                        <img  width="100vw" src="Assets/Ratings/star4,5.png">
+                        <h6 class=" d-inline-block m-2">Best Station Ever</h6>
+                    </div>
+                    <div class="mt-2">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla vero, nobis dicta perspiciatis repellendus sapiente unde, beatae at accusantium ratione molestias necessitatibus ut quod quaerat amet error, atque rem autem.</p>
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <span><img width="40vw" height="40vw" class="img-circle" src="Assets/Images/Account pic.png" alt=""></span>
+                    <span class="m-3"><h6 class="d-inline-block">Faisel Ali</h6></span>
+                    <div class="mt-2">
+                        <img  width="100vw" src="Assets/Ratings/star2,5.png">
+                        <h6 class=" d-inline-block m-2">Below Average</h6>
+                    </div>
+                    <div class="mt-2">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla vero, nobis dicta perspiciatis repellendus sapiente unde, beatae at accusantium ratione molestias necessitatibus ut quod quaerat amet error, atque rem autem.</p>
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <span><img width="40vw" height="40vw" class="img-circle" src="Assets/Images/Account pic.png" alt=""></span>
+                    <span class="m-3"><h6 class="d-inline-block">Muzahem Omer</h6></span>
+                    <div class="mt-2">
+                        <img  width="100vw" src="Assets/Ratings/star1.png">
+                        <h6 class=" d-inline-block m-2">A Waste Of Money </h6>
+                    </div>
+                    <div class="mt-2">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla vero, nobis dicta perspiciatis repellendus sapiente unde, beatae at accusantium ratione molestias necessitatibus ut quod quaerat amet error, atque rem autem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <footer id="footer" class="section-sm bg-tertiary">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <div class="footer-widget">
+                        <h5 class="mb-4 text-primary font-secondary">Service</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="games-stations.html">Games Station</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="events.html">Events</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="Games.html">Games</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <div class="footer-widget">
+                        <h5 class="mb-4 text-primary font-secondary">About</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="vision.html">Our Vision</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="team.html">Our Team</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <div class="footer-widget">
+                        <h5 class="mb-4 text-primary font-secondary">Help</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="index.html#contact">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 newsletter-form">
+                    <div style="background-color: #F4F4F4; padding: 35px;">
+                        <h5 class="mb-4 text-primary font-secondary">Subscribe</h5>
+                        <div class="pe-0 pe-xl-5">
+                            <form action="#!" method="get" name="mc-embedded-subscribe-form">
+                                <div class="input-group mb-3">
+                                    <input type="email" class="form-control shadow-none bg-white border-end-0" placeholder="Email address"> <span class="input-group-text border-0 p-0">
+                                        <button onclick="alert('Subsceibed Successfully')" style="height: 2.85vw;" class="input-group-text border-0 bg-primary" type="submit" name="subscribe"
+                                                aria-label="Subscribe for Newsletter">
+                                            <i><img  src="Assets/Images/arrow-right.svg" alt=""></i>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <input type="text" name="b_463ee871f45d2d93748e77cad_a0a2c6d074" tabindex="-1">
+                                </div>
+                            </form>
+                        </div>
+                        <p class="mb-0">Stay in the loop with our latest news and notifications. Subscribe today for exclusive updates and be the first to know. Don't miss out, join our community now!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center mt-5 text-center text-md-start">
+                <div class="col-lg-4">
+                    <a href="index.html">
+                        <h5>Game Zone</h5>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+                    <ul class="list-unstyled list-inline mb-0 text-lg-center">
+                        <li class="list-inline-item me-4">
+                            <a class="text-black" href="Privacy.html">Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item me-4">
+                            <a class="text-black" href="terms.html">Terms &amp; Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 text-md-end mt-4 mt-md-0">
+                    <ul class="list-unstyled list-inline mb-0 social-icons">
+                        <li class="list-inline-item me-3">
+                            <a title="Explorer Facebook Profile" class="text-black" href="https://facebook.com/"><img src="Assets/Images/facebook.svg"></a>
+                        </li>
+                        <li class="list-inline-item me-3">
+                            <a title="Explorer Twitter Profile" class="text-black" href="https://twitter.com/"><img src="Assets/Images/twitter.svg"></a>
+                        </li>
+                        <li class="list-inline-item me-3">
+                            <a title="Explorer Instagram Profile" class="text-black" href="https://instagram.com/"><img src="Assets/Images/instagram.svg"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+
+</html>
